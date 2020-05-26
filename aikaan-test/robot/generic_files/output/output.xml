@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot rpa="false" generated="20200324 10:04:46.020" generator="Robot 3.1.2 (Python 2.7.16 on linux2)">
+<suite id="s1" name="Custom Group &amp; Device Group">
+<suite source="/home/pi/GitProjects/aikaan-test/robot/custom_group_test_cases/custom_group.robot" id="s1-s1" name="Custom Group">
+<test id="s1-s1-t1" name="CG_TC_001: Creation of Custom Group without Tags">
+<kw type="setup" name="Run Keywords" library="BuiltIn">
+<doc>Executes all the given keywords in a sequence.</doc>
+<arguments>
+<arg>KEY_LOGIN_TO_AIKAAN_DASHBOARD</arg>
+<arg>KEY_SKIP_HELP_TOUR</arg>
+<arg>KEY_CLICK_CG_NAV_TAB</arg>
+</arguments>
+<kw name="KEY_LOGIN_TO_AIKAAN_DASHBOARD" library="common">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${LOGIN_URL}</arg>
+<arg>${BROWSER_ENV}</arg>
+</arguments>
+<msg timestamp="20200324 10:04:47.687" level="FAIL">Variable '${LOGIN_URL}' not found.</msg>
+<status status="FAIL" endtime="20200324 10:04:47.687" starttime="20200324 10:04:47.685"></status>
+</kw>
+<status status="FAIL" endtime="20200324 10:04:47.688" starttime="20200324 10:04:47.684"></status>
+</kw>
+<status status="FAIL" endtime="20200324 10:04:47.688" starttime="20200324 10:04:47.683"></status>
+</kw>
+<kw type="teardown" name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20200324 10:04:47.690" starttime="20200324 10:04:47.689"></status>
+</kw>
+<tags>
+<tag>custom_group</tag>
+<tag>smoke</tag>
+</tags>
+<status status="FAIL" endtime="20200324 10:04:47.690" critical="yes" starttime="20200324 10:04:47.681">Setup failed:
+Variable '${LOGIN_URL}' not found.</status>
+</test>
+<test id="s1-s1-t2" name="CG_TC_002: Deletion of Custom Group">
+<kw type="setup" name="Run Keywords" library="BuiltIn">
+<doc>Executes all the given keywords in a sequence.</doc>
+<arguments>
+<arg>KEY_LOGIN_TO_AIKAAN_DASHBOARD</arg>
+<arg>KEY_SKIP_HELP_TOUR</arg>
+<arg>KEY_CLICK_CG_NAV_TAB</arg>
+</arguments>
+<kw name="KEY_LOGIN_TO_AIKAAN_DASHBOARD" library="common">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${LOGIN_URL}</arg>
+<arg>${BROWSER_ENV}</arg>
+</arguments>
+<msg timestamp="20200324 10:04:47.697" level="FAIL">Variable '${LOGIN_URL}' not found.</msg>
+<status status="FAIL" endtime="20200324 10:04:47.697" starttime="20200324 10:04:47.695"></status>
+</kw>
+<status status="FAIL" endtime="20200324 10:04:47.698" starttime="20200324 10:04:47.694"></status>
+</kw>
+<status status="FAIL" endtime="20200324 10:04:47.698" starttime="20200324 10:04:47.693"></status>
+</kw>
+<kw type="teardown" name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20200324 10:04:47.699" starttime="20200324 10:04:47.699"></status>
+</kw>
+<tags>
+<tag>custom_group</tag>
+<tag>smoke</tag>
+</tags>
+<status status="FAIL" endtime="20200324 10:04:47.700" critical="yes" starttime="20200324 10:04:47.692">Setup failed:
+Variable '${LOGIN_URL}' not found.</status>
+</test>
+<test id="s1-s1-t3" name="CG_TC_003: Creation of Custom Group with existing Tags">
+<kw type="setup" name="Run Keywords" library="BuiltIn">
+<doc>Executes all the given keywords in a sequence.</doc>
+<arguments>
+<arg>KEY_LOGIN_TO_AIKAAN_DASHBOARD</arg>
+<arg>KEY_SKIP_HELP_TOUR</arg>
+<arg>KEY_CLICK_CG_NAV_TAB</arg>
+</arguments>
+<kw name="KEY_LOGIN_TO_AIKAAN_DASHBOARD" library="common">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${LOGIN_URL}</arg>
+<arg>${BROWSER_ENV}</arg>
+</arguments>
+<msg timestamp="20200324 10:04:47.706" level="FAIL">Variable '${LOGIN_URL}' not found.</msg>
+<status status="FAIL" endtime="20200324 10:04:47.707" starttime="20200324 10:04:47.704"></status>
+</kw>
+<status status="FAIL" endtime="20200324 10:04:47.707" starttime="20200324 10:04:47.704"></status>
+</kw>
+<status status="FAIL" endtime="20200324 10:04:47.707" starttime="20200324 10:04:47.703"></status>
+</kw>
+<kw type="teardown" name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20200324 10:04:47.709" starttime="20200324 10:04:47.708"></status>
+</kw>
+<tags>
+<tag>custom_group</tag>
+<tag>sanity</tag>
+</tags>
+<status status="FAIL" endtime="20200324 10:04:47.709" critical="yes" starttime="20200324 10:04:47.701">Setup failed:
+Variable '${LOGIN_URL}' not found.</status>
+</test>
+<test id="s1-s1-t4" name="CG_TC_004: Creation of Custom Group with new Tags">
+<kw type="setup" name="Run Keywords" library="BuiltIn">
+<doc>Executes all the given keywords in a sequence.</doc>
+<arguments>
+<arg>KEY_LOGIN_TO_AIKAAN_DASHBOARD</arg>
+<arg>KEY_SKIP_HELP_TOUR</arg>
+<arg>KEY_CLICK_CG_NAV_TAB</arg>
+</arguments>
+<kw name="KEY_LOGIN_TO_AIKAAN_DASHBOARD" library="common">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${LOGIN_URL}</arg>
+<arg>${BROWSER_ENV}</arg>
+</arguments>
+<msg timestamp="20200324 10:04:47.716" level="FAIL">Variable '${LOGIN_URL}' not found.</msg>
+<status status="FAIL" endtime="20200324 10:04:47.716" starttime="20200324 10:04:47.714"></status>
+</kw>
+<status status="FAIL" endtime="20200324 10:04:47.717" starttime="20200324 10:04:47.713"></status>
+</kw>
+<status status="FAIL" endtime="20200324 10:04:47.717" starttime="20200324 10:04:47.712"></status>
+</kw>
+<kw type="teardown" name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20200324 10:04:47.718" starttime="20200324 10:04:47.718"></status>
+</kw>
+<tags>
+<tag>custom_group</tag>
+<tag>sanity</tag>
+</tags>
+<status status="FAIL" endtime="20200324 10:04:47.719" critical="yes" starttime="20200324 10:04:47.710">Setup failed:
+Variable '${LOGIN_URL}' not found.</status>
+</test>
+<doc>All the Custom Group feature related test cases are present in this file
+
+The test cases are inteded to perform creation, updation and deleteion of groups.</doc>
+<status status="FAIL" endtime="20200324 10:04:47.720" starttime="20200324 10:04:47.104"></status>
+</suite>
+<suite source="/home/pi/GitProjects/aikaan-test/robot/device_group_test_cases/device_group.robot" id="s1-s2" name="Device Group">
+<test id="s1-s2-t1" name="DG_TC_001: Creation of Device Group">
+<kw type="setup" name="Run Keywords" library="BuiltIn">
+<doc>Executes all the given keywords in a sequence.</doc>
+<arguments>
+<arg>KEY_LOGIN_TO_AIKAAN_DASHBOARD</arg>
+<arg>KEY_SKIP_HELP_TOUR</arg>
+<arg>KEY_CLICK_DGP_NAV_TAB</arg>
+</arguments>
+<kw name="KEY_LOGIN_TO_AIKAAN_DASHBOARD" library="common">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${LOGIN_URL}</arg>
+<arg>${BROWSER_ENV}</arg>
+</arguments>
+<msg timestamp="20200324 10:04:47.755" level="FAIL">Variable '${LOGIN_URL}' not found.</msg>
+<status status="FAIL" endtime="20200324 10:04:47.755" starttime="20200324 10:04:47.753"></status>
+</kw>
+<status status="FAIL" endtime="20200324 10:04:47.756" starttime="20200324 10:04:47.752"></status>
+</kw>
+<status status="FAIL" endtime="20200324 10:04:47.756" starttime="20200324 10:04:47.751"></status>
+</kw>
+<tags>
+<tag>device_group</tag>
+<tag>smoke</tag>
+</tags>
+<status status="FAIL" endtime="20200324 10:04:47.756" critical="yes" starttime="20200324 10:04:47.750">Setup failed:
+Variable '${LOGIN_URL}' not found.</status>
+</test>
+<test id="s1-s2-t2" name="DG_TC_002: Deletion of Device Group">
+<kw type="setup" name="Run Keywords" library="BuiltIn">
+<doc>Executes all the given keywords in a sequence.</doc>
+<arguments>
+<arg>KEY_LOGIN_TO_AIKAAN_DASHBOARD</arg>
+<arg>KEY_SKIP_HELP_TOUR</arg>
+<arg>KEY_CLICK_DGP_NAV_TAB</arg>
+</arguments>
+<kw name="KEY_LOGIN_TO_AIKAAN_DASHBOARD" library="common">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${LOGIN_URL}</arg>
+<arg>${BROWSER_ENV}</arg>
+</arguments>
+<msg timestamp="20200324 10:04:47.763" level="FAIL">Variable '${LOGIN_URL}' not found.</msg>
+<status status="FAIL" endtime="20200324 10:04:47.764" starttime="20200324 10:04:47.761"></status>
+</kw>
+<status status="FAIL" endtime="20200324 10:04:47.764" starttime="20200324 10:04:47.760"></status>
+</kw>
+<status status="FAIL" endtime="20200324 10:04:47.764" starttime="20200324 10:04:47.759"></status>
+</kw>
+<tags>
+<tag>device_group</tag>
+<tag>smoke</tag>
+</tags>
+<status status="FAIL" endtime="20200324 10:04:47.765" critical="yes" starttime="20200324 10:04:47.758">Setup failed:
+Variable '${LOGIN_URL}' not found.</status>
+</test>
+<test id="s1-s2-t3" name="DG_TC_003: Search a Device Group">
+<kw type="setup" name="Run Keywords" library="BuiltIn">
+<doc>Executes all the given keywords in a sequence.</doc>
+<arguments>
+<arg>KEY_LOGIN_TO_AIKAAN_DASHBOARD</arg>
+<arg>KEY_SKIP_HELP_TOUR</arg>
+<arg>KEY_CLICK_DGP_NAV_TAB</arg>
+</arguments>
+<kw name="KEY_LOGIN_TO_AIKAAN_DASHBOARD" library="common">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${LOGIN_URL}</arg>
+<arg>${BROWSER_ENV}</arg>
+</arguments>
+<msg timestamp="20200324 10:04:47.771" level="FAIL">Variable '${LOGIN_URL}' not found.</msg>
+<status status="FAIL" endtime="20200324 10:04:47.772" starttime="20200324 10:04:47.769"></status>
+</kw>
+<status status="FAIL" endtime="20200324 10:04:47.772" starttime="20200324 10:04:47.769"></status>
+</kw>
+<status status="FAIL" endtime="20200324 10:04:47.772" starttime="20200324 10:04:47.768"></status>
+</kw>
+<tags>
+<tag>device_group</tag>
+<tag>sanity</tag>
+</tags>
+<status status="FAIL" endtime="20200324 10:04:47.773" critical="yes" starttime="20200324 10:04:47.766">Setup failed:
+Variable '${LOGIN_URL}' not found.</status>
+</test>
+<doc>All the device group related test cases are present in this file
+The test cases are intended to perform creation and deletion of groups.</doc>
+<status status="FAIL" endtime="20200324 10:04:47.774" starttime="20200324 10:04:47.724"></status>
+</suite>
+<status status="FAIL" endtime="20200324 10:04:47.780" starttime="20200324 10:04:46.675"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="7" pass="0">Critical Tests</stat>
+<stat fail="7" pass="0">All Tests</stat>
+</total>
+<tag>
+<stat fail="4" pass="0">custom_group</stat>
+<stat fail="3" pass="0">device_group</stat>
+<stat fail="3" pass="0">sanity</stat>
+<stat fail="4" pass="0">smoke</stat>
+</tag>
+<suite>
+<stat fail="7" id="s1" name="Custom Group &amp; Device Group" pass="0">Custom Group &amp; Device Group</stat>
+<stat fail="4" id="s1-s1" name="Custom Group" pass="0">Custom Group &amp; Device Group.Custom Group</stat>
+<stat fail="3" id="s1-s2" name="Device Group" pass="0">Custom Group &amp; Device Group.Device Group</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20200324 10:04:46.084" level="ERROR">Processing variable file '/home/pi/GitProjects/aikaan-test/robot/generic_files/env_variables.py' failed: Importing variable file '/home/pi/GitProjects/aikaan-test/robot/generic_files/env_variables.py' failed: KeyError: 'AIKAAN_SERVER'
+Traceback (most recent call last):
+  File "/home/pi/GitProjects/aikaan-test/robot/generic_files/env_variables.py", line 2, in &lt;module&gt;
+    SERVER_ENV= os.environ['AIKAAN_SERVER'] #demo.aikaan.io
+  File "/usr/lib/python2.7/UserDict.py", line 40, in __getitem__
+    raise KeyError(key)
+PYTHONPATH:
+  /usr/local/bin
+  /usr/lib/python2.7
+  /usr/lib/python2.7/plat-arm-linux-gnueabihf
+  /usr/lib/python2.7/lib-tk
+  /usr/lib/python2.7/lib-old
+  /usr/lib/python2.7/lib-dynload
+  /home/pi/.local/lib/python2.7/site-packages
+  /usr/local/lib/python2.7/dist-packages
+  /usr/lib/python2.7/dist-packages</msg>
+<msg timestamp="20200324 10:04:47.668" level="ERROR">Error in file '/home/pi/GitProjects/aikaan-test/robot/generic_files/common.resource': Processing variable file '/home/pi/GitProjects/aikaan-test/robot/generic_files/env_variables.py' failed: Importing variable file '/home/pi/GitProjects/aikaan-test/robot/generic_files/env_variables.py' failed: KeyError: 'AIKAAN_SERVER'
+Traceback (most recent call last):
+  File "/home/pi/GitProjects/aikaan-test/robot/generic_files/env_variables.py", line 2, in &lt;module&gt;
+    SERVER_ENV= os.environ['AIKAAN_SERVER'] #demo.aikaan.io
+  File "/usr/lib/python2.7/UserDict.py", line 40, in __getitem__
+    raise KeyError(key)
+PYTHONPATH:
+  /usr/local/bin
+  /usr/lib/python2.7
+  /usr/lib/python2.7/plat-arm-linux-gnueabihf
+  /usr/lib/python2.7/lib-tk
+  /usr/lib/python2.7/lib-old
+  /usr/lib/python2.7/lib-dynload
+  /home/pi/.local/lib/python2.7/site-packages
+  /usr/local/lib/python2.7/dist-packages
+  /usr/lib/python2.7/dist-packages</msg>
+<msg timestamp="20200324 10:04:47.673" level="ERROR">Error in file '/home/pi/GitProjects/aikaan-test/robot/generic_files/common.resource': Setting variable '${BASE_URL}' failed: Variable '${SERVER_ENV}' not found.</msg>
+<msg timestamp="20200324 10:04:47.677" level="ERROR">Error in file '/home/pi/GitProjects/aikaan-test/robot/generic_files/common.resource': Setting variable '${LOGIN_URL}' failed: Variable '${BASE_URL}' not found.</msg>
+<msg timestamp="20200324 10:04:47.738" level="ERROR">Error in file '/home/pi/GitProjects/aikaan-test/robot/generic_files/common.resource': Processing variable file '/home/pi/GitProjects/aikaan-test/robot/generic_files/env_variables.py' failed: Importing variable file '/home/pi/GitProjects/aikaan-test/robot/generic_files/env_variables.py' failed: KeyError: 'AIKAAN_SERVER'
+Traceback (most recent call last):
+  File "/home/pi/GitProjects/aikaan-test/robot/generic_files/env_variables.py", line 2, in &lt;module&gt;
+    SERVER_ENV= os.environ['AIKAAN_SERVER'] #demo.aikaan.io
+  File "/usr/lib/python2.7/UserDict.py", line 40, in __getitem__
+    raise KeyError(key)
+PYTHONPATH:
+  /usr/local/bin
+  /usr/lib/python2.7
+  /usr/lib/python2.7/plat-arm-linux-gnueabihf
+  /usr/lib/python2.7/lib-tk
+  /usr/lib/python2.7/lib-old
+  /usr/lib/python2.7/lib-dynload
+  /home/pi/.local/lib/python2.7/site-packages
+  /usr/local/lib/python2.7/dist-packages
+  /usr/lib/python2.7/dist-packages</msg>
+<msg timestamp="20200324 10:04:47.742" level="ERROR">Error in file '/home/pi/GitProjects/aikaan-test/robot/generic_files/common.resource': Setting variable '${BASE_URL}' failed: Variable '${SERVER_ENV}' not found.</msg>
+<msg timestamp="20200324 10:04:47.746" level="ERROR">Error in file '/home/pi/GitProjects/aikaan-test/robot/generic_files/common.resource': Setting variable '${LOGIN_URL}' failed: Variable '${BASE_URL}' not found.</msg>
+</errors>
+</robot>

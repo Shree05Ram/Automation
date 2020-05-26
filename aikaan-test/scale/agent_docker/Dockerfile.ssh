@@ -1,0 +1,25 @@
+FROM ubuntu:latest
+RUN apt-get update && apt-get install -y curl sudo supervisor net-tools wget openssh-server
+COPY patch/opt /opt
+ENV USER ubuntu
+
+RUN useradd $USER && \
+  # SSHD CONFIG
+  { \
+    echo "PermitRootLogin prohibit-password"; \
+    echo "PasswordAuthentication yes";        \
+    echo "GatewayPorts yes";                  \
+    echo "ClientAliveInterval 60";            \
+    echo "ClientAliveCountMax 3";             \
+  } >> /etc/ssh/sshd_config
+
+COPY patch/id_rsa.pub /home/$USER/.ssh/authorized_keys
+RUN chown -R $USER.$USER /home/$USER && \
+  chmod 700 /home/$USER/.ssh && \
+  chmod 600 /home/$USER/.ssh/authorized_keys
+Run mkdir /run/sshd
+Run echo "[program:aicon_sshd]">>/opt/aikaan/etc/aikaan_supervisord.conf 
+Run echo "command=/usr/sbin/sshd -D">>/opt/aikaan/etc/aikaan_supervisord.conf
+
+ENV AIKAAN_AGENT_INSTALL_DIR=/ AIKAAN_AGENT_CONFIG_DIR=
+ENTRYPOINT ["/opt/aikaan/bin/supervisord", "-c" ,"/opt/aikaan/etc/aikaan_supervisord.conf"]
