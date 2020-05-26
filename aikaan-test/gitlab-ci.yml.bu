@@ -1,0 +1,16 @@
+image: prashanthjbabu/robotcicd:latest
+before_script:
+  - python --version
+  - echo $AIKAAN_SERVER
+  - echo $AIKAAN_EMAIL
+  - echo $TEST_TYPE
+runrobot:
+  script:
+   - cd robot && ./run.sh
+  artifacts:
+   when: always
+   paths:
+    - /builds/aikaanlabs/aikaan-test/robot/generic_files/output/output.xml
+    - /builds/aikaanlabs/aikaan-test/robot/generic_files/output/log.html
+    - /builds/aikaanlabs/aikaan-test/robot/generic_files/output/report.html
+

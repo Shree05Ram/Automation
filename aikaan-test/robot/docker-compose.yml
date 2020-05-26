@@ -1,0 +1,14 @@
+version: "2.0"
+
+services:
+
+  aikaan-robot:
+    image: prashanthjbabu/robot:latest
+    container_name: aikaan-robot
+    volumes:
+     - ./:/robot
+    environment:
+      - TEST_TYPE=all
+      - AIKAAN_SERVER=xx.yy.zz
+      - AIKAAN_EMAIL=user@email.id
+      - AIKAAN_PASSWORD=userPassword
